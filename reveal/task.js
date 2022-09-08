@@ -12,7 +12,7 @@ function isVisible(element){
     return true
 }
 
-setInterval(()=>{
+document.addEventListener('scroll', ()=>{
     reval.forEach((element)=>{
         if (isVisible(element)) {
             element.classList.add('reveal_active')
@@ -22,4 +22,4 @@ setInterval(()=>{
             }
         }
     })
-}, 10)
+})
